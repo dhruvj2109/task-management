@@ -7,16 +7,11 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import { RxAvatar } from 'react-icons/rx';
 
 const MyTasks = ({ taskInfo, loading }) => {
-	console.log('task info', taskInfo);
-
 	const [progressType, setProgressType] = useState('In Progress'); // 'In Progress', 'Completed', 'Not Started'
 	const typeOfTasks = useMemo(() => {
 		return [...new Set(taskInfo?.map(task => task.progress))];
 	}, [taskInfo]);
 
-	const informationToShow = useMemo(() => {}, []);
-
-	console.log('task type', typeOfTasks);
 	return (
 		<div className={styles['my-tasks-con']}>
 			<div className={styles['task-header']}>
