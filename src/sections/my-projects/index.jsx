@@ -51,7 +51,7 @@ const MyProjects = () => {
 		<div className={styles['projects-con']}>
 			<div className={styles['projects-con-header']}>
 				{homepageHeading.map((tab, index) => (
-					<h4 className={activeTab === tab.id ? styles['active-tab'] : ''} key={index}>
+					<h4 className={activeTab === tab.id ? styles['active-tab'] : ''} key={index} onClick={() => setActiveTab(tab.id)}>
 						{tab.title}
 					</h4>
 				))}
