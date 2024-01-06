@@ -1,0 +1,50 @@
+.projects-con {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .icon-details {
+        color: white;
+        background-color: rgb(228, 227, 227, 0.3);
+        width: 40px;
+        margin: auto;
+        border-radius: 8px;
+        padding: 7px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .active-tab {
+            font-weight: 700 !important;
+        }
+
+        .search-box {
+            outline: none;
+            border: 0;
+            background-color: rgb(245, 245, 245);
+            padding: 5px 10px;
+            border-radius: 8px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            outline: none;
+            border: 0;
+            background-color: rgb(245, 245, 245);
+        }
+    }
+
+    &-cards-section {
+        display: flex;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,52 @@
+.menu-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-header {
+        padding: 20px 0;
+        gap: 60px !important;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &-items {
+        width: 100%;
+        a {
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: gray;
+        }
+
+        a:hover {
+            background-color: rgb(214, 214, 245);
+        }
+
+        .active-menu {
+            border-right: 2px solid blue !important;
+            color: blue;
+        }
+    }
+
+    .logout-icon {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 30px;
+        color: gray;
+    }
+}

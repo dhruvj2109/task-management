@@ -1,0 +1,58 @@
+.card-con {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &--light-blue {
+        background-color: #3AC1DE;
+    }
+
+    &--purple {
+        background-color: #908AEA;
+    }
+
+    &--orange {
+        background-color: #FEAB73;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .icon-con {
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .info-icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        gap: 15px; 
+
+        .content-number {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .change-from-yesterday {
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+}
